@@ -25,7 +25,7 @@ context('TestSetByMarian', () => {
         cy.get(':nth-child(9) > .btn').should('be.visible');
     })
 
-    /*it('Case-1. Negative. Wrong e-mail verification', function () {
+    it('Case-1. Negative. Wrong e-mail verification', function () {
         cy.get('#customer_email')
             .type('fake@email.com')
             .should('have.value', 'fake@email.com');
@@ -110,7 +110,7 @@ context('TestSetByMarian', () => {
         
         cy.location('href')
             .should('eq', 'https://www.caseative.com/');
-    })*/
+    })
 
     it('Case-6. Positive. Press Return to Store', function() {
         cy.get('[href="https://www.caseative.com"]')
